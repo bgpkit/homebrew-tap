@@ -1,4 +1,4 @@
-class Oneio < Formula
+class BgpkitParser < Formula
 
   desc "MRT/BGP data CLI parser"
   homepage "https://github.com/bgpkit/bgpkit-parser"
