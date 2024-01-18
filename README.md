@@ -4,6 +4,7 @@
 
 - [`monocle`](https://github.com/bgpkit/monocle)
 - [`oneio`](https://github.com/bgpkit/oneio)
+- [`bgpkit-broker`](https://github.com/bgpkit/bgpkit-broker)
 
 ## How do I install these formulae?
 
