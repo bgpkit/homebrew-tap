@@ -2,10 +2,10 @@ class Oneio < Formula
   desc "Rust CLI that can read from anywhere"
   homepage "https://github.com/bgpkit/oneio"
 
-  version "0.16.1"
+  version "0.16.2"
 
-  url "https://github.com/bgpkit/oneio/releases/download/v0.16.1/oneio-universal-apple-darwin.tar.gz"
-  sha256 "edf2a1927ef6459df990803e005335be8defe33cbed93a04f0dcd8ef97a57154"
+  url "https://github.com/bgpkit/oneio/releases/download/v0.16.2/oneio-universal-apple-darwin.tar.gz"
+  sha256 "aab795e12265b3664f3bcd40e71a8a25dd68ee60a9f4b6fda28186210f6df523"
 
   def install
     bin.install "oneio"
