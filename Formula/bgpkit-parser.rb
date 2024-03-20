@@ -3,10 +3,10 @@ class BgpkitParser < Formula
   desc "MRT/BGP data CLI parser"
   homepage "https://github.com/bgpkit/bgpkit-parser"
 
-  version "0.10.2"
+  version "0.10.4"
 
-  url "https://github.com/bgpkit/bgpkit-parser/releases/download/v0.10.2/bgpkit-parser-universal-apple-darwin.tar.gz"
-  sha256 "550b59b14e08f48347bf6fb566ef573807740322c8a99957d444f438e6ec4a47"
+  url "https://github.com/bgpkit/bgpkit-parser/releases/download/v0.10.4/bgpkit-parser-universal-apple-darwin.tar.gz"
+  sha256 "54f40a5a5862ad59e1fb2beed7fab7268ad9037fdb17d818d9b8c1cc57fd183d"
 
   def install
     bin.install "bgpkit-parser"
