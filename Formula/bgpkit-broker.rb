@@ -2,6 +2,7 @@ class BgpkitBroker < Formula
 
   desc "BGP MRT files finder"
   homepage "https://github.com/bgpkit/bgpkit-broker"
+  license "MIT"
 
   version "0.7.5"
 
@@ -10,10 +11,22 @@ class BgpkitBroker < Formula
 
   def install
     bin.install "bgpkit-broker"
+    (var/"bgpkit/bgpkit-broker").mkpath
+  end
+
+  def post_install
+    (var/"bgpkit/bgpkit-broker").mkpath
   end
 
   test do
     system "#{bin}/bgpkit-broker --version"
+  end
+
+  service do
+    run [opt_bin/"bgpkit-broker", "serve", "--bootstrap", var/"bgpkit/bgpkit-broker/database.sqlite3"]
+    keep_alive true
+    log_path var/"bgpkit/bgpkit-broker/broker-log.log"
+    error_log_path var/"bgpkit/bgpkit-broker/broker-log.log"
   end
 
 end
