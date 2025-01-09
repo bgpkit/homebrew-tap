@@ -4,8 +4,8 @@ class Monocle < Formula
   homepage "https://github.com/bgpkit/monocle"
 
   version "0.7.0"
-  url "https://github.com/bgpkit/monocle/releases/download/v0.7.0/monocle-universal-apple-darwin.tar.gz"
-  sha256 "af8866d30a3869621b8984b834469c07bd6e9236df66be1d56dac650b46d5720"
+  url "https://github.com/bgpkit/monocle/releases/download/v0.7.2/monocle-universal-apple-darwin.tar.gz"
+  sha256 "9b883a8bfd8015159cd978e3d5a473bbcf0579994858333ebd4f2ad762f64794"
 
   def install
     bin.install "monocle"
