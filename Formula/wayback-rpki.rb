@@ -9,10 +9,23 @@ class WaybackRpki < Formula
 
   def install
     bin.install "wayback-rpki"
+    (var/"bgpkit/wayback-rpki").mkpath
+  end
+
+  def post_install
+    (var/"bgpkit/wayback-rpki").mkpath
   end
 
   test do
     system "#{bin}/wayback-rpki --version"
+  end
+
+  # https://docs.brew.sh/Formula-Cookbook#service-files
+  service do
+    run [opt_bin/"wayback-rpki", "serve", "--bootstrap", var/"bgpkit/wayback-rpki/roas_trie.bin.gz"]
+    keep_alive true
+    log_path var/"bgpkit/wayback-rpki/wayback-rpki.log"
+    error_log_path var/"bgpkit/wayback-rpki/wayback-rpki.error.log"
   end
 
 end

@@ -26,7 +26,7 @@ class BgpkitBroker < Formula
     run [opt_bin/"bgpkit-broker", "serve", "--bootstrap", var/"bgpkit/bgpkit-broker/database.sqlite3"]
     keep_alive true
     log_path var/"bgpkit/bgpkit-broker/broker-log.log"
-    error_log_path var/"bgpkit/bgpkit-broker/broker-log.log"
+    error_log_path var/"bgpkit/bgpkit-broker/broker-log.error.log"
   end
 
 end
