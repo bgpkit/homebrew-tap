@@ -3,9 +3,9 @@ class WaybackRpki < Formula
   desc "An CLI tool for RPKI ROAs historical lookup."
   homepage "https://github.com/bgpkit/wayback-rpki"
 
-  version "1.0.0"
-  url "https://github.com/bgpkit/wayback-rpki/releases/download/v1.0.0/wayback-rpki-universal-apple-darwin.tar.gz"
-  sha256 "3fdfaba74ca18a26dc9f5110be74807011c90becf89307d5e9d10a05d2a1196e"
+  version "1.0.1"
+  url "https://github.com/bgpkit/wayback-rpki/releases/download/v1.0.1/wayback-rpki-universal-apple-darwin.tar.gz"
+  sha256 "a932af6af52036648bd3f564689bfe9786dbd7289298d55889e6beb691a24251"
 
   def install
     bin.install "wayback-rpki"
