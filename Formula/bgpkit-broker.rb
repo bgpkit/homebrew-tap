@@ -4,10 +4,10 @@ class BgpkitBroker < Formula
   homepage "https://github.com/bgpkit/bgpkit-broker"
   license "MIT"
 
-  version "0.7.9"
+  version "0.7.10"
 
-  url "https://github.com/bgpkit/bgpkit-broker/releases/download/v0.7.9/bgpkit-broker-universal-apple-darwin.tar.gz"
-  sha256 "363da43e126aeca4923a0492938579af3d0faf0d6e402028b1ae0706925b3122"
+  url "https://github.com/bgpkit/bgpkit-broker/releases/download/v0.7.10/bgpkit-broker-universal-apple-darwin.tar.gz"
+  sha256 "7d2b1bf0829d95e48f4039e02005b5d4ba330b3e327d8b595fab0f98b64777d5"
 
   def install
     bin.install "bgpkit-broker"
@@ -22,6 +22,7 @@ class BgpkitBroker < Formula
     system "#{bin}/bgpkit-broker --version"
   end
 
+  # https://docs.brew.sh/Formula-Cookbook#service-files
   service do
     run [opt_bin/"bgpkit-broker", "serve", "--bootstrap", var/"bgpkit/bgpkit-broker/database.sqlite3"]
     keep_alive true
