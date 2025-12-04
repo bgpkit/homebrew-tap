@@ -4,10 +4,10 @@ class BgpkitBroker < Formula
   homepage "https://github.com/bgpkit/bgpkit-broker"
   license "MIT"
 
-  version "0.9.2"
+  version "0.10.1"
 
-  url "https://github.com/bgpkit/bgpkit-broker/releases/download/v0.9.2/bgpkit-broker-universal-apple-darwin.tar.gz"
-  sha256 "3d48454b50651af86215c6d5b493ee896101f8116176dc2df22496b35946b12a"
+  url "https://github.com/bgpkit/bgpkit-broker/releases/download/v0.10.1/bgpkit-broker-universal-apple-darwin.tar.gz"
+  sha256 "2863f108b3494c205a6691f32246269bdab28a8c3bf0f232f3238071c8306bf3"
 
   def install
     bin.install "bgpkit-broker"
