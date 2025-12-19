@@ -3,9 +3,9 @@ class Monocle < Formula
   desc "See through all BGP data with a monocle."
   homepage "https://github.com/bgpkit/monocle"
 
-  version "1.0.1"
-  url "https://github.com/bgpkit/monocle/releases/download/v1.0.1/monocle-universal-apple-darwin.tar.gz"
-  sha256 "08ec2eeef5865647a7dab1dc75b5afcd772bc490c0f3b0872e5d9ba351977b88"
+  version "1.0.2"
+  url "https://github.com/bgpkit/monocle/releases/download/v1.0.2/monocle-universal-apple-darwin.tar.gz"
+  sha256 "8591183033ebaa6abd19e0db64bf8d08db7c3942cdff8b50edeacbe2d42a9ac8"
 
   def install
     bin.install "monocle"
