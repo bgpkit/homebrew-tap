@@ -5,7 +5,7 @@ class Asninfo < Formula
 
   version "0.4.3"
   url "https://github.com/bgpkit/asninfo/releases/download/v0.4.3/asninfo-universal-apple-darwin.tar.gz"
-  sha256 "c50b3b28501dddced00bc6a7481d0cea4dcabead477b5321cb8121f5c1ff96cf"
+  sha256 "9ee71b231224a8162d3a0f9b607b378336262bf38e1433d983d26823e2d3b16b"
 
   def install
     bin.install "asninfo"
