@@ -3,9 +3,9 @@ class Asninfo < Formula
   desc "ASN data exporter"
   homepage "https://github.com/bgpkit/asninfo"
 
-  version "0.3.1"
-  url "https://github.com/bgpkit/asninfo/releases/download/v0.3.1/asninfo-universal-apple-darwin.tar.gz"
-  sha256 "418b52c02871cfcceb6bfdc5d29908f4cad072ee8bceb1d9b0555d1ac38d2f94"
+  version "0.4.3"
+  url "https://github.com/bgpkit/asninfo/releases/download/v0.4.3/asninfo-universal-apple-darwin.tar.gz"
+  sha256 "c50b3b28501dddced00bc6a7481d0cea4dcabead477b5321cb8121f5c1ff96cf"
 
   def install
     bin.install "asninfo"
